@@ -4,7 +4,13 @@ import hu.szamalk.modell.LyukasHenger;
 import hu.szamalk.modell.MertaniHenger;
 import hu.szamalk.modell.TomorHenger;
 
-public class Main {
+import java.util.ArrayList;
+import java.util.List;
+
+public class HengerProgram {
+
+    private List<MertaniHenger> hengerek;
+
     public static void main(String[] args) {
         MertaniHenger m =new MertaniHenger(2,6);
         TomorHenger t=new TomorHenger(2,5,8);
@@ -12,6 +18,22 @@ public class Main {
         System.out.println("m = "+ m);
         System.out.println("t = " + t);
         System.out.println("ly = " + ly);
+
+    }
+
+    public HengerProgram() {
+        hengerek = new ArrayList<>();
+    }
+    public double atlagTerfogat(){
+        return 0.0;
+    }
+    public double csovekSulya(){
+        return 0.0;
+    }
+    private List<MertaniHenger> lista(){
+        return hengerek;
+    }
+    public void run(){
 
     }
 
