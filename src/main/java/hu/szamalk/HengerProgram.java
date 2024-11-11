@@ -42,7 +42,17 @@ public class HengerProgram {
         return osszTerfogat/MertaniHenger.getHengerDarab();
     }
     public double csovekSulya(){
-        return 0.0;
+        double csovekOsszSulya=0;
+        for(MertaniHenger henger:hengerek) {
+            if(henger instanceof LyukasHenger) {
+                /*2 sorban*/
+                /*LyukasHenger h = (LyukasHenger)henger;
+                csovekOsszSulya+=h.suly();*/
+                /*1 sorban*/
+                csovekOsszSulya += ((LyukasHenger) henger).suly();
+            }
+        }
+        return csovekOsszSulya;
     }
     private List<MertaniHenger> lista(){
         return hengerek;
