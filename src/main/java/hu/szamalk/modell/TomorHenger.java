@@ -17,7 +17,7 @@ public class TomorHenger  extends MertaniHenger{
     }
 
     public double suly(){
-        return fajsuly*terfogat();
+        return fajsuly*this.terfogat();
     }
     @Override
     public String toString() {
