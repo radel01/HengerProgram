@@ -27,12 +27,12 @@ public class HengerProgram {
 
     public HengerProgram() {
         hengerek = new ArrayList<>();
-        hengerek.add(new MertaniHenger(2,6));
-        hengerek.add(new MertaniHenger(2,8));
-        hengerek.add(new TomorHenger(2,5,8));
-        hengerek.add(new TomorHenger(1,4,8));
+        hengerek.add(new MertaniHenger(1,1));
+        hengerek.add(new MertaniHenger(1,1));
+        hengerek.add(new TomorHenger(1,1,.8));
+        hengerek.add(new TomorHenger(1,1,.5));
         hengerek.add(new LyukasHenger(1,1,1));
-        hengerek.add(new LyukasHenger(3,4,9));
+        hengerek.add(new LyukasHenger(1,1,1));
     }
     public double atlagTerfogat(){
         double osszTerfogat=0;

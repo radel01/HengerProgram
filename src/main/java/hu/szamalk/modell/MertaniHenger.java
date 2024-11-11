@@ -28,11 +28,15 @@ public class MertaniHenger {
     }
 
     public double terfogat(){
-        return 0.0;
+        return (sugar*sugar)*magassag*Math.PI;
     }
 
     public static int getHengerDarab() {
         return hengerDarab;
+    }
+    //Veszélyes!!!
+    public static void setHengerDarab(int hengerDarab) {
+        MertaniHenger.hengerDarab = hengerDarab;
     }
 
     @Override
