@@ -6,6 +6,7 @@ public class MertaniHenger {
     private double magassag;
 
     public MertaniHenger(double sugar, double magassag) {
+        MertaniHenger.hengerDarab++;
         this.sugar = sugar;
         this.magassag = magassag;
     }

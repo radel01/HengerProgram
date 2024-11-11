@@ -20,12 +20,10 @@ public class HengerProgram {
         for(MertaniHenger henger:this.lista()){
             System.out.println(henger);
         }
-
         System.out.println("Átlagtérfogat: "+ this.atlagTerfogat());
         System.out.println("Csövek összes súlya: "+ this.csovekSulya());
 
     }
-
 
     public HengerProgram() {
         hengerek = new ArrayList<>();
@@ -37,7 +35,11 @@ public class HengerProgram {
         hengerek.add(new LyukasHenger(3,4,9));
     }
     public double atlagTerfogat(){
-        return 0.0;
+        double osszTerfogat=0;
+        for(MertaniHenger henger:hengerek) {
+            osszTerfogat += henger.terfogat();
+        }
+        return osszTerfogat/MertaniHenger.getHengerDarab();
     }
     public double csovekSulya(){
         return 0.0;
