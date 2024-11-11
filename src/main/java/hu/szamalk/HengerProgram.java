@@ -22,6 +22,7 @@ public class HengerProgram {
         }
         System.out.println("Átlagtérfogat: "+ this.atlagTerfogat());
         System.out.println("Csövek összes súlya: "+ this.csovekSulya());
+        System.out.printf("A felhasznált hengerek (%d db): :\n", db);
 
     }
 

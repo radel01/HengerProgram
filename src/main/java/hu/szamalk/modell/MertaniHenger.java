@@ -35,8 +35,9 @@ public class MertaniHenger {
         return hengerDarab;
     }
     //Veszélyes!!!
-    public static void setHengerDarab(int hengerDarab) {
-        MertaniHenger.hengerDarab = hengerDarab;
+    //ha protected akkor csak az utódok érik el!!!!!!!!!
+    protected static void csokkentHengerDarab() {
+        MertaniHenger.hengerDarab--;
     }
 
     @Override

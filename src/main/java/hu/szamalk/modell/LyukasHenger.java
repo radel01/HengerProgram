@@ -21,7 +21,7 @@ public class LyukasHenger extends TomorHenger{
         //double kulsoV = super.terfogat();
         double belsoR=getSugar()-falvastagsag;
         MertaniHenger belsoH= new MertaniHenger(belsoR, this.getMagassag());
-        MertaniHenger.setHengerDarab(getHengerDarab()-1);
+        MertaniHenger.csokkentHengerDarab();
         //double belsoV= belsoH.terfogat();
         return  super.terfogat()-belsoH.terfogat();
 
